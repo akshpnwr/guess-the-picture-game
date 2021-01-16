@@ -1,0 +1,41 @@
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.images {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+}
+.image {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.image::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: #5ec576;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.new-game {
+  font-family: sans-serif;
+  color: aliceblue;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #5ec576;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1.25rem 4.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
